@@ -31,29 +31,20 @@ Data Extraction & Zipped Loading → Datetime Normalization → DataFrame Mergin
 Watch the generated data visualization output:
 `outputs/sentiment_pnl_chart.png` (Automatically generated upon running the pipeline)
 
-## 📁 Repository Contents
-
-* `data/hyperliquid_data.zip` — Compressed historical trader execution data
-* `data/bitcoin_sentiment.csv` — Daily market sentiment classifications
-* `notebooks/exploration.ipynb` — Jupyter notebook containing EDA
-* `src/` — Modularized core analytical logic and data loading functions
-* `main.py` — Main execution script
-* `requirements.txt` — Python dependencies
-* `.gitignore` — Git ignore rules
-
 ## 🔐 Environment Setup
 
 **Note on Data Handling:** To adhere to standard version control practices, the large Hyperliquid dataset has been compressed. The Python script reads the data directly from the `.zip` archive on the fly. **No manual extraction is required.**
 
-1. Clone the repository and navigate to the project directory:
-   ```bash
-   git clone [https://github.com/YARAGANIDURGADHANUSH/trader-behavior-analysis.git](https://github.com/YARAGANIDURGADHANUSH/trader-behavior-analysis.git)
-   cd trader-behavior-analysis
-Install the required dependencies:
+**1. Clone the repository and navigate to the project directory:**
+
+```bash
+git clone [https://github.com/YARAGANIDURGADHANUSH/trader-behavior-analysis.git](https://github.com/YARAGANIDURGADHANUSH/trader-behavior-analysis.git)
+cd trader-behavior-analysis
+2. Install the required dependencies:
 
 Bash
 pip install -r requirements.txt
-Execute the analysis pipeline:
+3. Execute the analysis pipeline:
 
 Bash
 python main.py
