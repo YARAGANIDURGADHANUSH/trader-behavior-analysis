@@ -6,7 +6,7 @@ from src.analysis_engine import calculate_insights, get_top_performing_phase
 
 def main():
     # Pointing EXACTLY to the files you uploaded
-    SENTIMENT_FILE = "data/fear_greed_index.csv"
+    SENTIMENT_FILE = "data/bitcoin_sentiment.csv"
     TRADER_FILE = "data/hyperliquid_data.zip"
 
     print("--- Starting Trader Behavior Insights Analysis ---")
