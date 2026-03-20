@@ -5,9 +5,9 @@ from src.data_loader import load_and_merge_data
 from src.analysis_engine import calculate_insights, get_top_performing_phase
 
 def main():
-    # Pointing exactly to the files you uploaded (with the .zip extension)
+    # Pointing EXACTLY to the files you uploaded
     SENTIMENT_FILE = "data/fear_greed_index.csv"
-    TRADER_FILE = "data/historical_data.zip"
+    TRADER_FILE = "data/hyperliquid_data.zip"
 
     print("--- Starting Trader Behavior Insights Analysis ---")
 
