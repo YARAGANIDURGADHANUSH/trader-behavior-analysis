@@ -46,21 +46,21 @@ Watch the generated data visualization output:
 
 **1. Clone the repository and navigate to the project directory:**
 
-```bash
-git clone [https://github.com/YARAGANIDURGADHANUSH/trader-behavior-analysis.git](https://github.com/YARAGANIDURGADHANUSH/trader-behavior-analysis.git)
-cd trader-behavior-analysis
-2. Install the required dependencies:
+    git clone [https://github.com/YARAGANIDURGADHANUSH/trader-behavior-analysis.git](https://github.com/YARAGANIDURGADHANUSH/trader-behavior-analysis.git)
+    cd trader-behavior-analysis
 
-Bash
-pip install -r requirements.txt
-3. Execute the analysis pipeline:
+**2. Install the required dependencies:**
 
-Bash
-python main.py
+    pip install -r requirements.txt
 
+**3. Execute the analysis pipeline:**
+
+    python main.py
 
 ## 🔄 Key Findings
+
 The workflow automatically uncovers that traders achieved their highest average profitability (Avg ~$87 PnL) during standard "Greed" market phases, but performance dropped significantly during "Extreme Greed" phases (Avg ~$25 PnL), indicating potential over-leveraging or poor risk management at market tops.
 
 ## 👨‍💻 Author
+
 Durga Dhanush Yaragani
