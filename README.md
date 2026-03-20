@@ -1,4 +1,3 @@
-Markdown
 # 📊 Trader Behavior Insights: Market Sentiment Analysis
 
 A fully automated data science pipeline that analyzes the relationship between Bitcoin Market Sentiment and actual trader performance using high-frequency execution data from Hyperliquid.
@@ -31,6 +30,16 @@ Data Extraction & Zipped Loading → Datetime Normalization → DataFrame Mergin
 Watch the generated data visualization output:
 `outputs/sentiment_pnl_chart.png` (Automatically generated upon running the pipeline)
 
+## 📁 Repository Contents
+
+* `data/hyperliquid_data.zip` — Compressed historical trader execution data
+* `data/bitcoin_sentiment.csv` — Daily market sentiment classifications
+* `notebooks/exploration.ipynb` — Jupyter notebook containing EDA
+* `src/` — Modularized core analytical logic and data loading functions
+* `main.py` — Main execution script
+* `requirements.txt` — Python dependencies
+* `.gitignore` — Git ignore rules
+
 ## 🔐 Environment Setup
 
 **Note on Data Handling:** To adhere to standard version control practices, the large Hyperliquid dataset has been compressed. The Python script reads the data directly from the `.zip` archive on the fly. **No manual extraction is required.**
@@ -48,8 +57,10 @@ pip install -r requirements.txt
 
 Bash
 python main.py
-🔄 Key Findings
+
+
+## 🔄 Key Findings
 The workflow automatically uncovers that traders achieved their highest average profitability (Avg ~$87 PnL) during standard "Greed" market phases, but performance dropped significantly during "Extreme Greed" phases (Avg ~$25 PnL), indicating potential over-leveraging or poor risk management at market tops.
 
-👨‍💻 Author
+## 👨‍💻 Author
 Durga Dhanush Yaragani
