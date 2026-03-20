@@ -1,15 +1,15 @@
 import pandas as pd
 
 def calculate_insights(df):
-    """Calculates key metrics like PnL and leverage per sentiment phase."""
-    # Calculate average PnL per sentiment category [cite: 78, 81]
-    pnl_summary = df.groupby('Classification')['closedPnL'].mean().sort_values()
+    """Calculates key metrics like PnL and Position Size per sentiment phase."""
+    # Use exact 'classification' and 'Closed PnL' columns
+    pnl_summary = df.groupby('classification')['Closed PnL'].mean().sort_values()
     
-    # Calculate average leverage per sentiment category [cite: 81]
-    leverage_summary = df.groupby('Classification')['leverage'].mean()
+    # Use 'Size USD' to show risk appetite
+    size_summary = df.groupby('classification')['Size USD'].mean()
     
-    return pnl_summary, leverage_summary
+    return pnl_summary, size_summary
 
 def get_top_performing_phase(df):
     """Identifies which sentiment phase yields the highest trader PnL."""
-    return df.groupby('Classification')['closedPnL'].mean().idxmax()
+    return df.groupby('classification')['Closed PnL'].mean().idxmax()
